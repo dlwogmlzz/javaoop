@@ -1,4 +1,4 @@
-package ex;
+package ex03;
 
 public class ElectricCar extends Car {
 
