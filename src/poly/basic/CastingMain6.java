@@ -13,10 +13,10 @@ public class CastingMain6 {
 
     private static void call(Parent parent) {
         parent.parentMethod();
-
-        if (parent instanceof Child) {
+        // Child 인스턴스인 경우 childMethod() 실행.
+        if (parent instanceof Child child) {    // 16이후부터 'child' 이렇게 변수 선언이 가능함.
             System.out.println("Child 인스턴스가 맞음");
-            Child child = (Child) parent;
+//            Child child = (Child) parent; // 위에서 parent instanceof Child 'child' 변수 선언을 해주면 필요없어짐.
             child.childMethod();
         }
     }
